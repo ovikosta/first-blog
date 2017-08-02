@@ -25,7 +25,10 @@ SECRET_KEY = 'c#+cmre5fm2k%c%*f2$8jurqof=qirwjo*fv10v58%z7qlp@rv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ovikosta.pythonanywhere.com',]
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'ovikosta.pythonanywhere.com',
+]
 
 
 # Application definition
