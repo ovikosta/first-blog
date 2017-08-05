@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kosta's blog</title>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="">Blog Kosta</a></h1>
+        </div>
+
+        {% comment %}<div>
+            <p>published: 03.08.2017, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>I learn python3 and Django liberated!</p>
+        </div>
+
+        <div>
+            <p>published: 03.08.2017, 02:20</p>
+            <h2><a href="">My second post</a></h2>
+            <p>At the moment i'm at work and a little sleepy.</p>
+        </div>{% endcomment %}
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
